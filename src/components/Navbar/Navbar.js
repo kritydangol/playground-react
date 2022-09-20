@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        MacroSoft
+        SoftBread
       </a>
       <button
         className="hamburger"
@@ -15,7 +15,6 @@ export default function Navbar() {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        {/* icon from heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
