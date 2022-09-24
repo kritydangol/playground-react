@@ -1,5 +1,25 @@
-.footer{
-    position: fixed;
-    bottom: 0;
-    padding: 20px;
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+
+.fa-footer {
+  background-color: #283b8b;
+  color: white;
+  margin: 10px 20px 10px 0px;
+  width: 35px;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 50px;
+}
+
+.fa-footer:hover {
+  background-color: #283c8bce;
+  color: white;
+}
+
+.footer-col-4{
+    width: 30%;
 }
