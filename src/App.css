@@ -24,3 +24,43 @@ body {
 article h1 {
   margin: 1rem 0;
 }
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+a:hover {
+  color: #283b8b;
+}
+
+h5 {
+  padding-bottom: 10px;
+}
+
+.textbar{
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: solid rgb(134, 134, 134) 1px;
+}
+
+.button{
+  width: 100%;
+  padding: 7px;
+  background-color: #283b8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

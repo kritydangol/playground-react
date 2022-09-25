@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="">
         <Navbar />
-        <div className="container">
+        <div className="container body">
           <article>
             <h1>Lets Get This Bread </h1>
             Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -1,8 +1,11 @@
 .footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
   padding: 30px;
   background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  --bs-gutter-x: 1.5rem;
 }
 
 .fa-footer {
@@ -13,6 +16,7 @@
   text-align: center;
   padding: 10px 0px;
   border-radius: 50px;
+  /* gutter */
 }
 
 .fa-footer:hover {
@@ -20,6 +24,60 @@
   color: white;
 }
 
-.footer-col-4{
-    width: 30%;
+.footer-col-4 {
+  flex: 0 0 auto;
+  width: 35%;
+}
+
+.footer-col-3 {
+  flex: 0 0 auto;
+  width: 15%;
+}
+
+.footer-col-5 {
+  flex: 0 0 auto;
+  width: 35%;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-col-4 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .footer-col-3 {
+    flex: 0 0 auto;
+    width: 21%;
+  }
+
+  .footer-col-5 {
+    border-top: solid #ccc 1px ;
+    padding-top: 30px;
+    margin-top: 30px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-col-4 {
+    flex: 0 0 auto;
+    width: 100%;
+    border-bottom: solid #ccc 1px ;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-col-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .footer-col-5 {
+    border-top: solid #ccc 1px ;
+    padding-top: 30px;
+    margin-top: 30px;
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
