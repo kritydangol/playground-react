@@ -1,6 +1,7 @@
 // import logo from "./logo.svg";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Tasks from "./components/Tasks/Tasks";
 import "./App.css";
 
 function App() {
@@ -11,8 +12,7 @@ function App() {
         <div className="container body">
           <article>
             <h1>Lets Get This Bread </h1>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry...
+            <Tasks />
           </article>
         </div>
         <Footer />
