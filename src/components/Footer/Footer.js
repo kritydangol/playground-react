@@ -1,5 +1,5 @@
-import React from "react";
 import "./Footer.css";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -43,8 +43,13 @@ const Footer = () => {
           <b>Newsletter</b>
         </h5>
         <form>
-          <input class="textbar" type="text" placeholder="Your Email ID here" /><br/>
-          <input class="button" type="submit" value="Submit" />
+          <input
+            class="textbar w-100"
+            type="text"
+            placeholder="Your Email ID here"
+          />
+          <br />
+          <input class="button w-100" type="submit" value="Submit" />
         </form>
       </div>
     </div>
