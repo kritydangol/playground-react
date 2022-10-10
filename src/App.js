@@ -7,16 +7,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="">
-        <Navbar />
-        <div className="container body">
-          <article>
-            <h1>Lets Get This Bread </h1>
-            <Tasks />
-          </article>
-        </div>
-        <Footer />
+      <Navbar />
+      <div className="container body center">
+        <h2>Lets Get This &#127838;</h2>
+        <Tasks />
       </div>
+      <Footer />
     </div>
   );
 }

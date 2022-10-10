@@ -13,11 +13,11 @@ const Footer = () => {
           ultrices sagittis orci a. Molestie nunc non blandit massa enim nec.
         </p>
         <div>
-          <i class="fa fa-facebook fa-footer" aria-hidden="true"></i>
-          <i class="fa fa-instagram fa-footer" aria-hidden="true"></i>
-          <i class="fa fa-twitter fa-footer" aria-hidden="true"></i>
-          <i class="fa fa-youtube-play fa-footer" aria-hidden="true"></i>
-          <i class="fa fa-whatsapp fa-footer" aria-hidden="true"></i>
+          <i className="fa fa-facebook fa-footer" aria-hidden="true"></i>
+          <i className="fa fa-instagram fa-footer" aria-hidden="true"></i>
+          <i className="fa fa-twitter fa-footer" aria-hidden="true"></i>
+          <i className="fa fa-youtube-play fa-footer" aria-hidden="true"></i>
+          <i className="fa fa-whatsapp fa-footer" aria-hidden="true"></i>
         </div>
       </div>
       <div className="footer-col-3">
@@ -44,12 +44,12 @@ const Footer = () => {
         </h5>
         <form>
           <input
-            class="textbar w-100"
+            className="textbar w-100"
             type="text"
             placeholder="Your Email ID here"
           />
           <br />
-          <input class="button w-100" type="submit" value="Submit" />
+          <input className="button w-100" type="submit" value="Submit" />
         </form>
       </div>
     </div>
