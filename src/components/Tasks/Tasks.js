@@ -1,19 +1,31 @@
+import { useState } from "react";
 import "./Tasks.css";
+import Input from "./Input/Input";
 
 const Tasks = () => {
-  const onClick = (e) => {
-    console.log("")
-  };
+
+  const [tasks, setTasks]= useState([
+    {
+      id: 1,
+      text: "Complete Learning React",
+      completed: false,
+    },
+    {
+      id: 2,
+      text: "Get the Bread",
+      completed: true,
+    },
+  ])
+
   return (
-    <div>
-      <input className="textbar taskbar" type="text" placeholder="Add Task" />
-      <input
-        onClick={onClick}
-        className="button task-btn"
-        type="submit"
-        value="Add"
-      />
-    </div>
+    <>
+      <Input />
+      {tasks.map((task) => (
+        <div className="center-div tasks" key={task.id}>
+          <p className="task">{task.text}</p>
+        </div>
+      ))}
+    </>
   );
 };
 

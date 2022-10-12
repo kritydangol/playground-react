@@ -1,0 +1,27 @@
+.taskbar {
+    margin-right: 10px;
+    width: 600px;
+  }
+  .task-btn {
+    width: 100px;
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .taskbar {
+      margin-right: 10px;
+      width: 60%;
+    }
+    .task-btn {
+      width: 20%;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .taskbar {
+      width: 100%;
+    }
+    .task-btn {
+      width: 100%;
+    }
+  }
+  

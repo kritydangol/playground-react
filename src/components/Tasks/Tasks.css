@@ -1,26 +1,12 @@
-.taskbar {
-  margin-right: 10px;
-  width: 600px;
+.task{
+  width: 710px;
+  text-align: left;
+  padding: 12px 7px;
+  margin-bottom: 0px;
 }
-.task-btn {
-  width: 100px;
-}
-
-@media only screen and (max-width: 850px) {
-  .taskbar {
-    margin-right: 10px;
-    width: 60%;
-  }
-  .task-btn {
-    width: 20%;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .taskbar {
-    width: 100%;
-  }
-  .task-btn {
-    width: 100%;
-  }
+.tasks{
+  background-color: #283b8b0a;
+  /* border-bottom: 1px solid black; */
+  margin-bottom: 12px;
+  border-radius: 5px;
 }
