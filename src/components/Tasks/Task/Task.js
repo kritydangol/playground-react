@@ -1,14 +1,14 @@
-import './Task.css'
+import "./Task.css";
 
 const task = ({ task }) => {
   return (
     <div
       className={task.completed ? "center-div tasks done" : "center-div tasks"}
     >
-      <p className={task.completed ? "task done" : "task"}>
+      <div className={task.completed ? "task done" : "task"}>
         {task.text}
-        {/* My Task */}
-      </p>
+        <i class="fa fa-times delete" aria-hidden="true"></i>
+      </div>
     </div>
   );
 };
