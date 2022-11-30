@@ -2,6 +2,7 @@ import { useState } from "react";
 // import logo from "./logo.svg";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Input from "./components/Tasks/Input/Input";
 import Tasks from "./components/Tasks/Tasks";
 import "./App.css";
 
@@ -24,12 +25,26 @@ function App() {
     },
   ]);
 
+  // Delete Tasks
+
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
   return (
     <div className="App">
       <Navbar />
       <div className="container body center">
         <h2>Lets Get This &#127838;</h2>
-        <Tasks tasks={tasks} />
+
+        <Input />
+
+        {tasks.length > 0 ? (
+          <Tasks tasks={tasks} onDelete={deleteTask} />
+        ) : (
+          "Add Ingredients, Let's bake that bread."
+        )}
+
       </div>
       <Footer />
     </div>
