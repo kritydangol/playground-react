@@ -29,6 +29,16 @@ function App() {
 
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
+    // console.log(id);
+  };
+
+  // Toggle completed
+  const completed = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    );
   };
 
   return (
@@ -40,11 +50,10 @@ function App() {
         <Input />
 
         {tasks.length > 0 ? (
-          <Tasks tasks={tasks} onDelete={deleteTask} />
+          <Tasks tasks={tasks} onDelete={deleteTask} onClick={completed} />
         ) : (
           "Add Ingredients, Let's bake that bread."
         )}
-
       </div>
       <Footer />
     </div>

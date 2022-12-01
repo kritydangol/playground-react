@@ -1,20 +1,31 @@
 import "./Input.css";
+import { useState } from "react";
 
 const Input = () => {
-  const onClick = (e) => {
-    console.log("clicked");
-  };
+  const [text, setText] = useState("");
+  const [complete, setComplete] = useState(false);
 
   return (
-    <div>
-      <input className="textbar taskbar" type="text" placeholder="Add Task" />
+    <form>
       <input
-        onClick={onClick}
+        className="textbar taskbar"
+        type="text"
+        placeholder="Add Task"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      {/* <input
+        type="checkbox"
+        value={complete}
+        onChange={(e) => setComplete(e.currentTarget.checked)}
+      /> */}
+      <input
+        // onClick={onClick}
         className="button task-btn"
         type="submit"
         value="Add"
       />
-    </div>
+    </form>
   );
 };
 

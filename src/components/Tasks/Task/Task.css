@@ -20,10 +20,19 @@
   background-color: #92ffb30d;
 }
 
+.complete {
+  float: right;
+  margin-top: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #283b8b;
+}
 .delete {
   float: right;
   margin-top: 3px;
+  margin-left: 10px;
   cursor: pointer;
+  color: #ff0000;
 }
 
 @media only screen and (max-width: 850px) {
