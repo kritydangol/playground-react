@@ -2,7 +2,7 @@ import { useState } from "react";
 // import logo from "./logo.svg";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Input from "./components/Tasks/Input/Input";
+import Input from "./components/Input/Input";
 import Tasks from "./components/Tasks/Tasks";
 import "./App.css";
 
@@ -24,6 +24,14 @@ function App() {
       completed: true,
     },
   ]);
+
+  // Add Tasks
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000) + 1;
+    const newTask = { id, ...task };
+
+    setTasks([...tasks, newTask]);
+  };
 
   // Delete Tasks
 
@@ -47,7 +55,7 @@ function App() {
       <div className="container body center">
         <h2>Lets Get This &#127838;</h2>
 
-        <Input />
+        <Input onAdd={addTask} />
 
         {tasks.length > 0 ? (
           <Tasks tasks={tasks} onDelete={deleteTask} onClick={completed} />

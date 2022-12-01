@@ -1,12 +1,26 @@
 import "./Input.css";
 import { useState } from "react";
 
-const Input = () => {
+const Input = ({onAdd}) => {
   const [text, setText] = useState("");
   const [complete, setComplete] = useState(false);
 
+  const onSubmit=(e)=>{
+    e.preventDefault();
+
+    if(!text){
+      alert('Please add a task!')
+      return
+    }
+
+    onAdd({text, complete})
+    
+    setText('')
+    setComplete(false)
+  }
+
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <input
         className="textbar taskbar"
         type="text"
@@ -20,7 +34,6 @@ const Input = () => {
         onChange={(e) => setComplete(e.currentTarget.checked)}
       /> */}
       <input
-        // onClick={onClick}
         className="button task-btn"
         type="submit"
         value="Add"
