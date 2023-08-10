@@ -1,3 +1,45 @@
-.heading{
+/* https://coolors.co/47455e-e1dfe1-bfafa6-aa968a */
+
+@font-face {
+  font-family: "Supreme-Regular";
+  src: url("./font/Supreme-Regular.otf");
+}
+@font-face {
+  font-family: "Chubbo";
+  src: url("./font/Chubbo-Bold.otf");
+}
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #47455e;
+  color: #e1dfe1;
   text-align: center;
+}
+
+.heading {
+  margin: 0;
+  padding: 50px 0;
+  font-family: Chubbo, monospace;
+  font-size: 50px;
+}
+
+.input_field {
+  border-radius: 10px;
+  border: 2px #bfafa6 solid;
+  padding: 10px 20px;
+  width: 60vw;
+}
+
+.input_field:focus-visible {
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .input_field {
+    width: 80vw;
+  }
 }
