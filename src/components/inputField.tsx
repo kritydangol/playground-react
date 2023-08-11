@@ -6,9 +6,12 @@ const InputField = () => {
       <input
         type="input"
         id="a"
-        className="input_field"
+        className="inputField"
         placeholder="Enter a Task"
       />
+      <button className="inputBtn" type="submit">
+        Add
+      </button>
     </form>
   );
 };
