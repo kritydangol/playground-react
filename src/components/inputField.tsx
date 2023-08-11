@@ -10,7 +10,8 @@ const InputField = ({ todo, setTodo }: Props) => {
     <form className="input">
       <input
         type="input"
-        id="a"
+        value={todo}
+        onChange={(e) => setTodo(e.target.value)}
         className="inputField"
         placeholder="Enter a Task"
       />
